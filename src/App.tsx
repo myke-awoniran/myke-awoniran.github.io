@@ -1,15 +1,9 @@
 import {useEffect, useState} from "react";
 import {Sun, Moon, Github, Mail, Linkedin, Twitter, LucideLink} from "lucide-react";
+import {BlogSection} from "./components/BlogSection";
 
 export default function Home() {
     const [theme, setTheme] = useState("light");
-    //
-    // useEffect(() => {
-    //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    //     setTheme("dark");
-    //     document.documentElement.classList.add("dark");
-    //   }
-    // }, []);
     useEffect(() => {
         // Force light theme on first load
         document.documentElement.classList.remove("dark");
@@ -22,21 +16,6 @@ export default function Home() {
         setTheme(newTheme);
         document.documentElement.classList.toggle("dark");
     };
-
-    const blogPosts = [
-        {
-            title: "Why PostgreSQL's Query Planner Thinks Differently",
-            slug: "postgresql-query-planner",
-        },
-        {
-            title: "Rebuilding Indexes Efficiently: Lessons from the Field",
-            slug: "rebuilding-indexes-efficiently",
-        },
-        {
-            title: "MVCC in Action: A Peek Into PostgreSQL Internals",
-            slug: "mvcc-in-postgresql",
-        },
-    ];
 
     const year = new Date().getFullYear();
 
@@ -80,8 +59,9 @@ export default function Home() {
                             Michael Awoniran <span className="opacity-50">(Myke)</span>
                         </h1>
                         <p className="text-lg text-muted-foreground">
-                            Software Engineer passionate about database systems and DBMS internals.
-                            I'm currently diving into Apache Pinot 🍷, a real-time OLAP DBMS.
+                            Hi, I’m Myke, a Software Engineer passionate about databases and distributed systems.
+                            I'm currently exploring Apache Pinot 🍷, a real-time OLAP database built for
+                            ultra-low-latency analytics at scale.
                             {/*— contributing to real-time analytics, indexing*/}
                             {/*strategies,and execution planning.*/}
                         </p>
@@ -99,71 +79,62 @@ export default function Home() {
                         <p className="text-muted-foreground">
                             {/*Outside of code, I enjoy writing poem, calm spaces, and really enjoy to travel.*/}
                             {/*Based in Nigeria — always happy to connect.*/}
-                            Beyond coding, I have a passion for poetry, appreciate serene environments, and love to
-                            travel.
-                            I also enjoy playing table tennis.
+                            Outside of code, I enjoy writing poem, appreciate serene environments, and love to
+                            travel. I also enjoy playing table tennis.
                         </p>
                     </div>
                 </header>
 
-                <section className="space-y-2">
-                    <h2 className="md:text-2xl text-xl font-semibold opacity-80">Education</h2>
-                    <div className="text-muted-foreground space-y-2">
-                        <p>
-                            Final-year B.Sc Computer Science and Engineering student at Obafemi Awolowo University
-                            (OAU),
-                            Nigeria.
-                            My academic journey has blended theory and practice, with a strong focus on systems
-                            programming, data structures,
-                            and scalable computing.
-                        </p>
-                        <p>
-                            Additionally, I’m taking both Introductory and Advanced Database Systems courses from
-                            Carnegie Mellon University (CMU),
-                            diving deep into storage engines, indexing, concurrency, and query planning.
-                        </p>
-                    </div>
-                </section>
+                {/*<section className="space-y-2">*/}
+                {/*    <h2 className="md:text-2xl text-xl font-semibold opacity-80">Education</h2>*/}
+                {/*    <div className="text-muted-foreground space-y-2">*/}
+                {/*        <p>*/}
+                {/*            Final-year B.Sc Computer Science and Engineering student at Obafemi Awolowo University*/}
+                {/*            (OAU),*/}
+                {/*            Nigeria.*/}
+                {/*            My academic journey has blended theory and practice, with a strong focus on systems*/}
+                {/*            programming, data structures,*/}
+                {/*            and scalable computing.*/}
+                {/*        </p>*/}
+                {/*        <p>*/}
+                {/*            Additionally, I’m taking both Introductory and Advanced Database Systems courses from*/}
+                {/*            Carnegie Mellon University (CMU),*/}
+                {/*            diving deep into storage engines, indexing, concurrency, and query planning.*/}
+                {/*        </p>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
                 <section className="space-y-2">
                     <h2 className="md:text-2xl text-xl font-semibold opacity-80">Projects</h2>
                     <ul className="list-disc list-inside space-y-1">
                         <li className="flex gap-1 items-center">
-                            <p><strong>QueryCraft:</strong> An experimental PostgreSQL query optimizer playground.</p> <a
-                            href="#"><LucideLink className="opacity-50" size={20}/></a>
+                            <p><strong>NASA App:</strong> Interactive App for exploring exoplanet data and identifying
+                                potentially habitable planets.</p>
+                            <a
+                                href="https://github.com/myke-awoniran/NASA-API"><LucideLink className="opacity-50"
+                                                                                             size={20}/></a>
                         </li>
                         <li className="flex gap-1 items-center">
-                           <p> <strong>MiniDB:</strong> A lightweight in-memory Java database engine exploring indexing and
-                               transaction internals.</p> <a href="#" ><LucideLink className="opacity-50"
-                                                                                                 size={20}/></a>
+                            <p><strong>Crop Health Simulation:</strong> Experimental model to simulate crop health @
+                                OAU.
+                            </p> <a
+                            href="https://github.com/myke-awoniran/Crop_health_simulation"><LucideLink
+                            className="opacity-50"
+                            size={20}/></a>
                         </li>
                         <li className="flex gap-1 items-center">
-                           <p> <strong>PerfTrackr:</strong> A tool to benchmark and analyze slow queries in Node.js
-                               apps.</p> <a
-                            href="#"><LucideLink className="opacity-50" size={20}/></a>
+                            <p><strong>A life Simulation:</strong> A-Life simulation leveraging Go’s goroutines and
+                                concurrency primitives.</p> <a
+                            href="https://github.com/myke-awoniran/A-life-simulation"><LucideLink className="opacity-50"
+                                                                                                  size={20}/></a>
                         </li>
                     </ul>
                 </section>
 
-                <section className="space-y-2">
-                    <h2 className="md:text-2x text-xl font-semibold opacity-80">Blog</h2>
-                    <p className="text-muted-foreground">I write about databases, performance tuning, and internal
-                        system design.</p>
-                    <ul className="list-disc list-inside space-y-1">
-                        {blogPosts.map((post) => (
-                            <li key={post.slug}>
-                                <a href={`/blog/${post.slug}`} className="underline-none">
-                                    {post.title}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-
+                <BlogSection/>
                 <footer className="pt-6 border-t mt-10">
                     <div className="flex justify-between text-sm text-muted-foreground">
                         <p className="mb-2"> &copy; {year} Michael Awoniran. All rights reserved.</p>
-                        {/*<span>Built with TypeScript, TailwindCSS, and curiosity.</span>*/}
                     </div>
                 </footer>
             </div>
