@@ -76,11 +76,11 @@ export default function Home() {
                     </div>
 
                     <div className="space-y-2">
-                        <h1 className="text-3xl font-bold mb-4 opacity-80">
-                            Hi, I’m Michael Awoniran
+                        <h1 className="md:text-3xl text-2xl font-bold mb-4 opacity-80">
+                            Michael Awoniran <span className="opacity-50">(Myke)</span>
                         </h1>
                         <p className="text-lg text-muted-foreground">
-                            A Software Engineer passionate about database systems and DBMS internals.
+                            Software Engineer passionate about database systems and DBMS internals.
                             I'm currently diving into Apache Pinot 🍷, a real-time OLAP DBMS.
                             {/*— contributing to real-time analytics, indexing*/}
                             {/*strategies,and execution planning.*/}
@@ -107,7 +107,7 @@ export default function Home() {
                 </header>
 
                 <section className="space-y-2">
-                    <h2 className="text-2xl font-semibold opacity-80">Education</h2>
+                    <h2 className="md:text-2xl text-xl font-semibold opacity-80">Education</h2>
                     <div className="text-muted-foreground space-y-2">
                         <p>
                             Final-year B.Sc Computer Science and Engineering student at Obafemi Awolowo University
@@ -126,27 +126,27 @@ export default function Home() {
                 </section>
 
                 <section className="space-y-2">
-                    <h2 className="text-2xl font-semibold opacity-80">Projects</h2>
+                    <h2 className="md:text-2xl text-xl font-semibold opacity-80">Projects</h2>
                     <ul className="list-disc list-inside space-y-1">
                         <li className="flex gap-1 items-center">
-                            <strong>QueryCraft:</strong> An experimental PostgreSQL query optimizer playground. <a
-                            href="#" className="underline"><LucideLink className="opacity-50" size={20}/></a>
+                            <p><strong>QueryCraft:</strong> An experimental PostgreSQL query optimizer playground.</p> <a
+                            href="#"><LucideLink className="opacity-50" size={20}/></a>
                         </li>
                         <li className="flex gap-1 items-center">
-                            <strong>MiniDB:</strong> A lightweight in-memory Java database engine exploring indexing and
-                            transaction internals. <a href="#" className="underline"><LucideLink className="opacity-50"
+                           <p> <strong>MiniDB:</strong> A lightweight in-memory Java database engine exploring indexing and
+                               transaction internals.</p> <a href="#" ><LucideLink className="opacity-50"
                                                                                                  size={20}/></a>
                         </li>
                         <li className="flex gap-1 items-center">
-                            <strong>PerfTrackr:</strong> A tool to benchmark and analyze slow queries in Node.js
-                            apps. <a
-                            href="#" className="underline"><LucideLink className="opacity-50" size={20}/></a>
+                           <p> <strong>PerfTrackr:</strong> A tool to benchmark and analyze slow queries in Node.js
+                               apps.</p> <a
+                            href="#"><LucideLink className="opacity-50" size={20}/></a>
                         </li>
                     </ul>
                 </section>
 
                 <section className="space-y-2">
-                    <h2 className="text-2xl font-semibold opacity-80">Blog</h2>
+                    <h2 className="md:text-2x text-xl font-semibold opacity-80">Blog</h2>
                     <p className="text-muted-foreground">I write about databases, performance tuning, and internal
                         system design.</p>
                     <ul className="list-disc list-inside space-y-1">
