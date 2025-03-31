@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 html, body {
-  @apply bg-white text-black dark:bg-black dark:text-white transition-colors duration-300;
+    @apply bg-white text-black dark:bg-[#121218] dark:text-white transition-colors duration-300;
 
 }
