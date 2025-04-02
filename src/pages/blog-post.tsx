@@ -13,7 +13,7 @@ export default function BlogPost() {
 
   return (
     <article className="prose dark:prose-invert max-w-3xl mx-auto px-4 py-8">
-      <h2 className="font-bold text-2xl">{blog.title}</h2>
+      <h2 className="font-bold text-2xl">{blog?.title}</h2>
       <p> {blog?.post}</p>
     </article>
   );
