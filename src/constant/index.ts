@@ -19,9 +19,6 @@ export const BLOGS = [
         title: "Choose the Right Tech Stack for Your Project: A Practical Guide",
         date: "2025-03-01",
         thumbnail: "/images/tech-stack.jpg",
-        readTime: "5 min read",
-        // excerpt:
-        //     "A comprehensive guide to selecting technologies that match your project requirements...",
         post: `When building a new digital product, selecting a technology stack may be a daunting task. There are a plethora of options to choose from. Don't worry, I have got you covered. Almost every technology is usable or viable in most cases. These four tips will help you choose the best technology you need for your requirements.
   
   The first thing you might want to consider is the PURPOSE. What do you want to build? Is it a prototype, which allows you to quickly verify your business assumptions? This is when you would like to choose the technology that will allow you to verify your assumptions in the market. On the other hand, if you want to build an already working application or are not looking to rebuild from scratch to meet different kinds of goals, you might want to choose a different technology, which is the most resilient one. The one that will allow you to build, maybe even enterprise-class software.
