@@ -72,9 +72,15 @@ export default function BlogPost() {
                 </header>
 
                 {/* Blog content */}
-                <article className="prose dark:prose-invert max-w-none text-lg leading-relaxed">
-                    <p>{blog.post}</p>
+                <article className="prose dark:prose-invert prose-lg max-w-none leading-relaxed space-y-6">
+                    {blog.post.split("\n\n").map((paragraph: string, index: number) => (
+                        <p key={index}>{paragraph.trim()}</p>
+                    ))}
                 </article>
+
+                {/*<article className="prose dark:prose-invert max-w-none text-lg leading-relaxed">*/}
+                {/*    <p>{blog.post}</p>*/}
+                {/*</article>*/}
             </div>
         </main>
     );
