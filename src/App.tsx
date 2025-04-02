@@ -7,6 +7,7 @@ import {
   Linkedin,
   Twitter,
   LucideLink,
+  ArrowRight,
 } from "lucide-react";
 import { BLOGS_DISPLAY } from "./constant";
 
@@ -96,30 +97,21 @@ export default function Home() {
           </h2>
           <ul className="list-disc list-inside space-y-1">
             <li className="flex gap-1 items-center">
-              <p>
+              <a href="https://github.com/myke-awoniran/NASA-API">
                 <strong>NASA App:</strong> Interactive App for exploring
                 exoplanet data and identifying potentially habitable planets.
-              </p>
-              <a href="https://github.com/myke-awoniran/NASA-API">
-                <LucideLink className="opacity-50" size={20} />
               </a>
             </li>
             <li className="flex gap-1 items-center">
-              <p>
+              <a href="https://github.com/myke-awoniran/Crop_health_simulation">
                 <strong>Crop Health Simulation:</strong> Experimental model to
                 simulate crop health @ OAU.
-              </p>
-              <a href="https://github.com/myke-awoniran/Crop_health_simulation">
-                <LucideLink className="opacity-50" size={20} />
               </a>
             </li>
             <li className="flex gap-1 items-center">
-              <p>
+              <a href="https://github.com/myke-awoniran/A-life-simulation">
                 <strong>A life Simulation:</strong> A-Life simulation leveraging
                 Go&pos;s goroutines and concurrency primitives.
-              </p>
-              <a href="https://github.com/myke-awoniran/A-life-simulation">
-                <LucideLink className="opacity-50" size={20} />
               </a>
             </li>
           </ul>
@@ -132,18 +124,24 @@ export default function Home() {
             I write about Computer Science, software Engineering, Databases and
             Distributed systems.
           </p>
-          <ul className="list-disc list-inside space-y-1">
-            {BLOGS_DISPLAY.map((post) => (
-              <li key={post.slug}>
-                <a
-                  href={`/blog/${post.slug}`}
-                  className="no-underline hover:underline"
-                >
-                  {post.title}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className="flex justify-between items-end">
+            <ul className="list-disc list-inside space-y-1">
+              {BLOGS_DISPLAY.map((post) => (
+                <li key={post.slug}>
+                  <a
+                    href={`/blog/${post.slug}`}
+                    className="no-underline hover:underline"
+                  >
+                    {post.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <a href="/blog" className="flex gap-2 items-center">
+              Read more <ArrowRight size={18} />
+            </a>
+          </div>
         </section>
 
         {/* footer */}
