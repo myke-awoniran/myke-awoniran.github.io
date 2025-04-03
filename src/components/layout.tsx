@@ -26,16 +26,21 @@ export const socials = [
 ];
 
 export default function Layout() {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(() => {
+        // Load from localStorage or fallback to 'light'
+        return localStorage.getItem("theme") || "light";
+    });
+
     const year = new Date().getFullYear();
+
     useEffect(() => {
         document.documentElement.classList.remove("dark", "light");
         document.documentElement.classList.add(theme);
+        localStorage.setItem("theme", theme); // Save to localStorage
     }, [theme]);
 
     const toggleTheme = () => {
-        const newTheme = theme === "light" ? "dark" : "light";
-        setTheme(newTheme);
+        setTheme((prev) => (prev === "light" ? "dark" : "light"));
     };
 
     return (
