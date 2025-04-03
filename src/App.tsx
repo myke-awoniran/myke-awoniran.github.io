@@ -12,15 +12,13 @@ export default function Home() {
                     <p className="text-lg text-muted-foreground">
                         Hi, I&apos;m Myke, a Software Engineer passionate about databases and distributed systems. I'm
                         currently
-                        exploring Apache Pinot 🍇, a real-time OLAP database built for ultra-low-latency analytics at
-                        scale. —
-                        contributing to real-time analytics, indexing strategies, and execution planning.
+                        exploring Apache Pinot 🍷, a real-time OLAP database built for ultra-low-latency analytics at
+                        scale.
                     </p>
 
                     <p className="text-muted-foreground">
-                        Outside of code, I enjoy writing poem, appreciate serene environments, and love to travel. I
-                        also enjoy
-                        playing table tennis.
+                        Outside of code, I also enjoy playing table tennis, appreciate serene environments, and love to
+                        travel.
                     </p>
                 </div>
             </header>
@@ -48,7 +46,7 @@ export default function Home() {
                         </a>
                     </li>
                 </ul>
-                <a href="/projects" className="flex gap-2 items-center">
+                <a href="/projects" className="flex gap-2 items-center font-semibold">
                     View more <ArrowRight size={18}/>
                 </a>
             </section>
@@ -69,7 +67,7 @@ export default function Home() {
                         ))}
                     </ul>
 
-                    <a href="/blog" className="flex gap-2 items-center">
+                    <a href="/blog" className="flex gap-2 items-center font-semibold">
                         View more <ArrowRight size={18}/>
                     </a>
                 </div>
