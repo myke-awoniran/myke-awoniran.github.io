@@ -31,7 +31,6 @@ export default function BlogPost() {
 
     return (
         <>
-            {/* Updated: Changed from <header> to <section> to avoid duplicate headers */}
             <section className="space-y-4">
                 <h2 className="md:text-3xl text-2xl font-bold">{blog.title}</h2>
                 <div className="text-muted-foreground text-base flex flex-col md:flex-row gap-1 md:gap-4">

@@ -1,28 +1,5 @@
 import {BLOGS_DISPLAY} from "./constant";
-import {ArrowRight, Github, Linkedin, Mail, Twitter} from "lucide-react";
-
-export const socials = [
-    {
-        href: "https://github.com/myke-awoniran",
-        label: "GitHub",
-        icon: <Github className="w-5 h-5"/>,
-    },
-    {
-        href: "https://www.linkedin.com/in/myke-awoniran/",
-        label: "LinkedIn",
-        icon: <Linkedin className="w-5 h-5"/>,
-    },
-    {
-        href: "https://x.com/mykethecsguy",
-        label: "Twitter",
-        icon: <Twitter className="w-5 h-5"/>,
-    },
-    {
-        href: "mailto:hello@mykecs.dev",
-        label: "Email",
-        icon: <Mail className="w-5 h-5"/>,
-    },
-];
+import {ArrowRight} from "lucide-react";
 
 export default function Home() {
     return (
@@ -71,16 +48,19 @@ export default function Home() {
                         </a>
                     </li>
                 </ul>
+                <a href="/projects" className="flex gap-2 items-center">
+                    View more <ArrowRight size={18}/>
+                </a>
             </section>
 
             <section className="space-y-2">
                 <h2 className="md:text-2xl text-xl font-semibold opacity-80">Blog</h2>
                 <p className="text-muted-foreground">
-                    I write about Computer Science, Software Engineering, Databases and Distributed Systems.
+                    I write about Computer Science, Software Engineering, Databases, and Distributed Systems.
                 </p>
                 <div className="space-y-2">
                     <ul className="list-disc list-inside space-y-1">
-                        {BLOGS_DISPLAY.map((post) => (
+                        {BLOGS_DISPLAY.slice(0, 3).map((post) => ( // Slice to show only 3 blogs
                             <li key={post.slug}>
                                 <a href={`/blog/${post.slug}`} className="no-underline hover:underline">
                                     {post.title}
@@ -94,6 +74,7 @@ export default function Home() {
                     </a>
                 </div>
             </section>
+
         </>
     );
 }
