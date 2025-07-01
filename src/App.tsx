@@ -10,15 +10,19 @@ export default function Home() {
                         Michael Awoniran <span className="opacity-50">(Myke)</span>
                     </h1>
                     <p className="text-lg text-muted-foreground">
-                        Hi, I&apos;m Myke, a Software Engineer passionate about databases and distributed systems. I'm
-                        currently
-                        exploring Apache Pinot 🍷, a real-time OLAP database built for ultra-low-latency analytics at
-                        scale.
+                        Hi, my name is Michael.
+                    </p>
+                    <p className="text-muted-foreground">
+                        - Software Engineer passionate about databases and distributed systems.
+                    </p>
+                    <p className="text-muted-foreground">
+                        - Currently, I am exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency
+                        analytics at scale.
                     </p>
 
                     <p className="text-muted-foreground">
-                        Outside of code, I also enjoy playing table tennis, appreciate serene environments, and love to
-                        travel.
+                        - Beyond coding, I spend my extracurricular time playing table tennis. I love to admire the
+                        beauty of nature and I find traveling quite lovable.
                     </p>
                 </div>
             </header>
