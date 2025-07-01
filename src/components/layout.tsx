@@ -67,6 +67,17 @@ export default function Layout() {
                 <footer className="pt-6 border-t mt-10">
                     <div className="flex justify-between text-sm text-muted-foreground">
                         <p className="mb-2">&copy; {year} Michael Awoniran. All rights reserved.</p>
+                        <p className="mb-2">
+                            Feel free to reach out:{' '}
+                            <a
+                                href="mailto:contact@myke.pro"
+                                className="text-black-600 underline-offset-2 decoration-transparent transition-colors duration-200 hover:text-black-700 hover:decoration-current hover:underline"
+                            >
+                                contact@myke.pro
+                            </a>
+                        </p>
+
+                        {/*<p className="mb-2">Feel free to reach out: contact@myke.pro </p>*/}
                     </div>
                 </footer>
             </div>

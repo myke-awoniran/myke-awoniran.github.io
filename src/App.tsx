@@ -5,26 +5,58 @@ export default function Home() {
     return (
         <>
             <header className="space-y-12">
+                {/*<div className="space-y-2">*/}
+                {/*    <h1 className="md:text-3xl text-2xl font-bold mb-4 opacity-80">*/}
+                {/*        Michael Awoniran <span className="opacity-50">(Myke)</span>*/}
+                {/*    </h1>*/}
+                {/*    <p className="text-lg text-muted-foreground">*/}
+                {/*        Hi, my name is Michael (he/him).*/}
+                {/*    </p>*/}
+                {/*    <p className="text-muted-foreground">*/}
+                {/*        - Software Engineer passionate about databases and distributed systems.*/}
+                {/*    </p>*/}
+                {/*    <p className="text-muted-foreground">*/}
+                {/*        - Currently, I am exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency*/}
+                {/*        analytics at scale.*/}
+                {/*    </p>*/}
+
+                {/*    <p className="text-muted-foreground">*/}
+                {/*        - Currently, I am exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency*/}
+                {/*        analytics at scale.*/}
+                {/*    </p>*/}
+
+                {/*    <p className="text-muted-foreground">*/}
+                {/*        - Beyond coding, I spend my extracurricular time playing table tennis. I love to admire the*/}
+                {/*        beauty of nature and I find traveling quite lovable.*/}
+                {/*    </p>*/}
+                {/*</div>*/}
                 <div className="space-y-2">
-                    <h1 className="md:text-3xl text-2xl font-bold mb-4 opacity-80">
+                    <h1 className="md:text-3xl text-2xl font-bold mb-6 opacity-80">
                         Michael Awoniran <span className="opacity-50">(Myke)</span>
                     </h1>
-                    <p className="text-lg text-muted-foreground">
-                        Hi, my name is Michael.
+
+                    <p className="text-lg font-semibold text-muted-foreground">
+                        Hey, I'm Michael (he/him).
                     </p>
+
                     <p className="text-muted-foreground">
-                        - Software Engineer passionate about databases and distributed systems.
+                        - Software Engineer with strong background in cs + engineering.
                     </p>
+
                     <p className="text-muted-foreground">
-                        - Currently, I am exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency
+                        - Passionate about databases and distributed systems.
+                    </p>
+
+                    <p className="text-muted-foreground">
+                        - Exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency
                         analytics at scale.
                     </p>
 
                     <p className="text-muted-foreground">
-                        - Beyond coding, I spend my extracurricular time playing table tennis. I love to admire the
-                        beauty of nature and I find traveling quite lovable.
+                        - Beyond coding, I enjoy playing table tennis, admiring nature’s beauty, and traveling.
                     </p>
                 </div>
+
             </header>
 
             <section className="space-y-2">
