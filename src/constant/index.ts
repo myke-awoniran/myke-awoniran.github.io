@@ -16,41 +16,24 @@ export const BLOGS_DISPLAY = [
         title: "Selecting the right Database for your Project",
         slug: "selecting-the-right-database",
     },
-    {
-        title: "Choose the Right Tech Stack for Your Project: A Practical Guide",
-        slug: "choosing-tech-stack",
-    },
-    {
-        title: "How the CPU Works: A Programmer’s Perspective",
-        slug: "how-the-cpus-works",
-    },
-    {
-        title: "Designing Internal Systems That Scale",
-        slug: "designing-internal-systems",
-    },
-
-    {
-        title: "Selecting the right Database for your Project",
-        slug: "selecting-the-right-database",
-    },
-    {
-        title: "Choose the Right Tech Stack for Your Project: A Practical Guide",
-        slug: "choosing-tech-stack",
-    },
-    {
-        title: "How the CPU Works: A Programmer’s Perspective",
-        slug: "how-the-cpus-works",
-    },
-    {
-        title: "Designing Internal Systems That Scale",
-        slug: "designing-internal-systems",
-    },
-
-    {
-        title: "Selecting the right Database for your Project",
-        slug: "selecting-the-right-database",
-    },
 ];
+
+export const PROJECTS = [
+    {
+        title: "NASA API",
+        slug: "nasa-api",
+        description: "A SAAS API infrastructure for businesses to get feedback from their users on features they want to see in the product.",
+        thumbnail: "",
+        url: "https://feature.vote",
+    },
+    {
+        title: "Feedback Board",
+        slug: "feedback-board",
+        description: "A platform for collecting and managing user feedback effectively.",
+        thumbnail: "/images/feedback-board.jpg",
+        url: "https://feedback.board",
+    },
+]
 
 export const BLOGS = [
     {

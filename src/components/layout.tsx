@@ -14,12 +14,12 @@ export const socials = [
         icon: <Linkedin className="w-5 h-5"/>,
     },
     {
-        href: "https://x.com/mykethecsguy",
+        href: "https://x.com/_m_y_k_e",
         label: "Twitter",
         icon: <Twitter className="w-5 h-5"/>,
     },
     {
-        href: "mailto:hello@mykecs.dev",
+        href: "mailto:contact@myke.pro",
         label: "Email",
         icon: <Mail className="w-5 h-5"/>,
     },
