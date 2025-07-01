@@ -30,10 +30,21 @@ export default function Home() {
                 {/*        beauty of nature and I find traveling quite lovable.*/}
                 {/*    </p>*/}
                 {/*</div>*/}
+                {/*https://res.cloudinary.com/dnmjjbxhe/image/upload/v1751413616/portfolio-image_xrn3y3.jpg*/}
                 <div className="space-y-2">
-                    <h1 className="md:text-3xl text-2xl font-bold mb-6 opacity-80">
-                        Michael Awoniran <span className="opacity-50">(Myke)</span>
-                    </h1>
+                    {/*<h1 className="md:text-3xl text-2xl font-bold mb-6 opacity-80">*/}
+                    {/*    Michael Awoniran <span className="opacity-50">(Myke)</span>*/}
+                    {/*</h1>*/}
+                    <div className="flex items-center space-x-4 mb-6">
+                        <img
+                            src="https://res.cloudinary.com/dnmjjbxhe/image/upload/v1751413616/portfolio-image_xrn3y3.jpg" // h
+                            alt="Michael Awoniran"
+                            className="w-12 h-12 rounded-full object-cover"
+                        />
+                        <h1 className="md:text-3xl text-2xl font-bold opacity-80">
+                            Michael Awoniran <span className="opacity-50">(Myke)</span>
+                        </h1>
+                    </div>
 
                     <p className="text-lg font-semibold text-muted-foreground">
                         Hey, I'm Michael (he/him).
