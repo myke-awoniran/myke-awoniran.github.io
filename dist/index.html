@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Myke</title>
     <link rel="icon" type="image/png" href="/favicon.png"/>
-  <script type="module" crossorigin src="/assets/index-1f4a3be9.js"></script>
+
+    <!-- Apply saved theme before React loads -->
+    <script>
+        (function () {
+            const theme = localStorage.getItem("theme") || "light";
+            document.documentElement.classList.add(theme);
+        })();
+    </script>
+  <script type="module" crossorigin src="/assets/index-ae03abba.js"></script>
   <link rel="stylesheet" href="/assets/index-fea50e65.css">
 </head>
+
 <body>
 <div id="root"></div>
 
