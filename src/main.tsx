@@ -7,9 +7,11 @@ import "./index.css";
 import Home from "./App";
 import Layout from "./components/layout";
 import ProjectList from "./pages/project-list";
+import BackgroundMusic from "./components/background-music";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
+        <BackgroundMusic/>
         <BrowserRouter>
 
             <Routes>
