@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
         <BackgroundMusic/>
         <BrowserRouter>
-
             <Routes>
                 <Route element={<Layout/>}>
                     <Route path="/" element={<Home/>}/>
