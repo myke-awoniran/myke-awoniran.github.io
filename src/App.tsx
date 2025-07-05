@@ -68,33 +68,33 @@ export default function Home() {
                 {/*</a>*/}
             </section>
 
-            <section className="space-y-2">
-                <h2 className="md:text-2xl text-xl font-semibold opacity-80">Projects</h2>
-                <ul className="list-disc list-inside space-y-1">
-                    <li>
-                        <a href="https://github.com/myke-awoniran/NASA-API">
-                            <strong>NASA App:</strong> Interactive App for exploring exoplanet data and identifying
-                            potentially
-                            habitable planets.
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/myke-awoniran/Crop_health_simulation">
-                            <strong>Crop Health Simulation:</strong> Experimental model to simulate crop health @ OAU.
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/myke-awoniran/A-life-simulation">
-                            <strong>A life Simulation:</strong> A-Life simulation leveraging Go's goroutines and
-                            concurrency
-                            primitives.
-                        </a>
-                    </li>
-                </ul>
-                <a href="/projects" className="flex gap-2 items-center font-semibold">
-                    View more <ArrowRight size={18}/>
-                </a>
-            </section>
+            {/*<section className="space-y-2">*/}
+            {/*    <h2 className="md:text-2xl text-xl font-semibold opacity-80">Projects</h2>*/}
+            {/*    <ul className="list-disc list-inside space-y-1">*/}
+            {/*        <li>*/}
+            {/*            <a href="https://github.com/myke-awoniran/NASA-API">*/}
+            {/*                <strong>NASA App:</strong> Interactive App for exploring exoplanet data and identifying*/}
+            {/*                potentially*/}
+            {/*                habitable planets.*/}
+            {/*            </a>*/}
+            {/*        </li>*/}
+            {/*        <li>*/}
+            {/*            <a href="https://github.com/myke-awoniran/Crop_health_simulation">*/}
+            {/*                <strong>Crop Health Simulation:</strong> Experimental model to simulate crop health @ OAU.*/}
+            {/*            </a>*/}
+            {/*        </li>*/}
+            {/*        <li>*/}
+            {/*            <a href="https://github.com/myke-awoniran/A-life-simulation">*/}
+            {/*                <strong>A life Simulation:</strong> A-Life simulation leveraging Go's goroutines and*/}
+            {/*                concurrency*/}
+            {/*                primitives.*/}
+            {/*            </a>*/}
+            {/*        </li>*/}
+            {/*    </ul>*/}
+            {/*    <a href="/projects" className="flex gap-2 items-center font-semibold">*/}
+            {/*        View more <ArrowRight size={18}/>*/}
+            {/*    </a>*/}
+            {/*</section>*/}
 
             <section className="space-y-2">
                 <h2 className="md:text-2xl text-xl font-semibold opacity-80">Blog</h2>

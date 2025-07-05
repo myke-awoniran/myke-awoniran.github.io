@@ -8,6 +8,7 @@ import Home from "./App";
 import Layout from "./components/layout";
 import ProjectList from "./pages/project-list";
 import BackgroundMusic from "./components/background-music";
+import NotFound from "./components/not-found";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                     <Route path="/blog" element={<BlogList/>}/>
                     <Route path="/projects" element={<ProjectList/>}/>
                     <Route path="/blog/:slug" element={<BlogPost/>}/>
+                    <Route path="*" element={<NotFound/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
