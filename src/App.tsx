@@ -11,6 +11,7 @@ export default function Home() {
                     {/*</h1>*/}
                     <div className="flex items-center space-x-4 mb-6">
                         <img
+
                             src="https://res.cloudinary.com/dnmjjbxhe/image/upload/v1751413616/portfolio-image_xrn3y3.jpg" // h
                             alt="Michael Awoniran"
                             className="w-12 h-12 rounded-full object-cover"
@@ -20,7 +21,7 @@ export default function Home() {
                         </h1>
                     </div>
 
-                    <p className="text-lg font-semibold text-muted-foreground">
+                    <p className="text-lg font-semibold text-muted-foreground opacity-80">
                         Hey, I'm Michael (he/him).
                     </p>
 
@@ -42,6 +43,30 @@ export default function Home() {
                     </p>
                 </div>
             </header>
+
+            <section className="space-y-2">
+                <h2 className="md:text-2xl text-xl font-semibold opacity-80">Research Area</h2>
+                <p className="text-muted-foreground">
+                    High-Performance Analytics for the Cloud Era
+                </p>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Analytical Database Engines in the Cloud
+                    </li>
+                    <li>
+                        Analytics on Semi-Structured Data
+                    </li>
+                    <li>
+                        Scalable Data Processing on Many-Core Architectures
+                    </li>
+                    <li>
+                        High Performance Concurrency Control Algorithms
+                    </li>
+                </ul>
+                {/*<a href="/projects" className="flex gap-2 items-center font-semibold">*/}
+                {/*    View more <ArrowRight size={18}/>*/}
+                {/*</a>*/}
+            </section>
 
             <section className="space-y-2">
                 <h2 className="md:text-2xl text-xl font-semibold opacity-80">Projects</h2>
