@@ -17,35 +17,40 @@ export default function Home() {
                             alt="Michael Awoniran"
                             className="w-12 h-12 rounded-full object-cover"
                         />
+                        {/*<h1 className="md:text-3xl text-2xl font-bold opacity-80">*/}
+                        {/*    Michael Awoniran <span className="opacity-50">(Myke)</span>*/}
+                        {/*</h1>*/}
                         <h1 className="md:text-3xl text-2xl font-bold opacity-80">
-                            Michael Awoniran <span className="opacity-50">(Myke)</span>
+                            Myke Awoniran
                         </h1>
                     </div>
 
                     <p className="text-lg font-semibold text-muted-foreground opacity-80">
-                        Hey, I'm Michael (he/him).
+                        Hey, I'm Myke (he/him).
                     </p>
 
                     <p className="text-muted-foreground">
-                        - Software Engineer with strong background in cs + engineering.
+                        - Software Engineer with a solid background in computer science and engineering.
                     </p>
 
                     <p className="text-muted-foreground">
                         - Passionate about databases and distributed systems.
                     </p>
-
+                    
                     <p className="text-muted-foreground">
-                        - Before now, I.
+                        - Played a key role at Swervpay, a B2C payment platform, where my work helped drive over $5M in
+                        transaction volume.
                     </p>
 
                     <p className="text-muted-foreground">
-                        - Exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency
+                        - Currently exploring Apache Pinot — a real-time OLAP database designed for ultra-low-latency
                         analytics at scale.
                     </p>
 
                     <p className="text-muted-foreground">
-                        - Beyond coding, I enjoy playing table tennis, admiring nature’s beauty, and traveling.
+                        - Outside work, I enjoy playing table tennis, admiring nature, and traveling.
                     </p>
+
                 </div>
             </header>
 
