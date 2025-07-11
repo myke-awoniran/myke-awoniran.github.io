@@ -36,16 +36,29 @@ export default function Home() {
                     <p className="text-muted-foreground">
                         - Passionate about databases and distributed systems.
                     </p>
-                    
+
                     <p className="text-muted-foreground">
                         - Played a key role at Swervpay, a B2C payment platform, where my work helped drive over $5M in
                         transaction volume.
                     </p>
 
+                    {/*<p className="text-muted-foreground">*/}
+                    {/*    - Volunteer mentor with Carnegie Mellon’s CS Academy, supporting students in foundational*/}
+                    {/*    computer science.*/}
+                    {/*</p>*/}
                     <p className="text-muted-foreground">
-                        - Currently exploring Apache Pinot — a real-time OLAP database designed for ultra-low-latency
+                        - Volunteer mentor with <strong opacity-80>Carnegie Mellon University's CS Academy</strong>, helping
+                        students build a strong foundation in computer science
+                    </p>
+
+                    {/*<p className="text-muted-foreground">*/}
+                    {/*    - Currently exploring Apache Pinot. A real-time analytics database at scale.*/}
+                    {/*</p>*/}
+                    <p className="text-muted-foreground">
+                        -Currently exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency
                         analytics at scale.
                     </p>
+
 
                     <p className="text-muted-foreground">
                         - Outside work, I enjoy playing table tennis, admiring nature, and traveling.
