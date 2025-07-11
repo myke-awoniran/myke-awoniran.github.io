@@ -12,7 +12,8 @@ export default function Home() {
                     <div className="flex items-center space-x-4 mb-6">
                         <img
 
-                            src="https://res.cloudinary.com/dnmjjbxhe/image/upload/v1751413616/portfolio-image_xrn3y3.jpg" // h
+                            // src="https://res.cloudinary.com/dnmjjbxhe/image/upload/v1751413616/portfolio-image_xrn3y3.jpg" // h
+                            src="https://avatars.githubusercontent.com/u/76267448?s=400&u=e7af9747b55e8fb8afd707dbd31c8d8bc93120c5&v=4"
                             alt="Michael Awoniran"
                             className="w-12 h-12 rounded-full object-cover"
                         />
@@ -31,6 +32,10 @@ export default function Home() {
 
                     <p className="text-muted-foreground">
                         - Passionate about databases and distributed systems.
+                    </p>
+
+                    <p className="text-muted-foreground">
+                        - Before now, I.
                     </p>
 
                     <p className="text-muted-foreground">
