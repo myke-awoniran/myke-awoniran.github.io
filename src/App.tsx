@@ -38,22 +38,21 @@ export default function Home() {
                     </p>
 
                     <p className="text-muted-foreground">
-                        - Played a key role at Swervpay, a B2C payment platform, where my work helped drive over $5M in
+                        - Played a key role at <a href="https://www.swervpay.co/about" target="_blank"
+                                                  rel="noopener noreferrer"
+                                                  className="underline text-primary font-semibold opacity-80">Swervpay</a>, a
+                        B2C payment platform, where my work helped drive over $5M in
                         transaction volume.
                     </p>
 
-                    {/*<p className="text-muted-foreground">*/}
-                    {/*    - Volunteer mentor with Carnegie Mellon’s CS Academy, supporting students in foundational*/}
-                    {/*    computer science.*/}
-                    {/*</p>*/}
                     <p className="text-muted-foreground">
-                        - Volunteer mentor with <strong opacity-80>Carnegie Mellon University's CS Academy</strong>, helping
-                        students build a strong foundation in computer science
+                        - Volunteer mentor with <a href="https://academy.cs.cmu.edu" target="_blank"
+                                                   rel="noopener noreferrer"
+                                                   className="underline text-foreground font-semibold opacity-80 hover:underline">
+                        Carnegie Mellon University's CS Academy
+                    </a>, helping students build a strong foundation in computer science.
                     </p>
 
-                    {/*<p className="text-muted-foreground">*/}
-                    {/*    - Currently exploring Apache Pinot. A real-time analytics database at scale.*/}
-                    {/*</p>*/}
                     <p className="text-muted-foreground">
                         -Currently exploring Apache Pinot, a real-time OLAP database built for ultra-low-latency
                         analytics at scale.
@@ -128,7 +127,7 @@ export default function Home() {
                     <ul className="list-disc list-inside space-y-1">
                         {BLOGS_DISPLAY.slice(0, 3).map((post) => ( // Slice to show only 3 blogs
                             <li key={post.slug}>
-                                <a href={`/blog/${post.slug}`} className="no-underline hover:underline">
+                                <a href={`/blog/${post.slug}`} className="font-semibold underline hover:underline opacity-80 ">
                                     {post.title}
                                 </a>
                             </li>
